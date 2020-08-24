@@ -14,10 +14,8 @@ import './JS/plugin'
 import './JS/FastClick'
 import filters from './JS/filter'
 import utils from './JS/utils'
-import VueScroller from 'vue-scroller'
 import { get, post } from './JS/ajax'
 
-Vue.use(VueScroller)
 Vue.use(utils)
 
 Vue.prototype.$dialog = Dialog
