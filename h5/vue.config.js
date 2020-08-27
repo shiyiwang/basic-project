@@ -34,8 +34,8 @@ module.exports = {
     // 配置css
     css: {
         // 是否使用css分离插件 ExtractTextPlugin
-        extract: true,
-        sourceMap: true,
+        extract: process.env.NODE_ENV === 'production',
+        sourceMap: process.env.NODE_ENV !== 'production',
         // css预设器配置项
         loaderOptions: {
             postcss: {
